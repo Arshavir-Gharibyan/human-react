@@ -1,8 +1,6 @@
 import React from 'react';
-import {InputGroup, Button, Form, Col, Row, ButtonGroup, Dropdown, DropdownButton, Card} from "react-bootstrap";
-import {AiOutlineSearch} from "react-icons/ai";
+import { Button, Col, Row, ButtonGroup, Dropdown, DropdownButton, Card} from "react-bootstrap";
 import {AiOutlineUserAdd} from "react-icons/ai";
-
 
 interface Props {
     users: any[],
@@ -26,18 +24,6 @@ const ShowHumans: React.FC<Props> = (props) => {
     return (
         <>
             <Row>
-                <Col md={12}>
-                    <InputGroup className="mb-3">
-                        <Button variant="outline-secondary" id="button-addon1">
-                            <AiOutlineSearch cursor="pointer"/>
-                        </Button>
-                        <Form.Control
-                            placeholder="Search"
-                            aria-label="Example text with button addon"
-                            aria-describedby="basic-addon1"
-                        />
-                    </InputGroup>
-                </Col>
                 <Col md={6}>
                     <Button variant="outline-secondary" onClick={handelAddHuman}> <AiOutlineUserAdd
                         cursor="pointer"/> Add Human </Button>{' '}
